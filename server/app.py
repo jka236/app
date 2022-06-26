@@ -9,7 +9,7 @@ app = FastAPI()
 app.include_router(WordRouter, tags=["Word"], prefix="/word")
 app.include_router(NounRouter, tags=["Noun"], prefix="/noun")
 
-origins = ["https://prismatic-zabaione-5bbfd9.netlify.app/", "http://localhost:3000"]
+origins = ["https://prismatic-zabaione-5bbfd9.netlify.app", "prismatic-zabaione-5bbfd9.netlify.app"]
 
 app.add_middleware(
     CORSMiddleware,
